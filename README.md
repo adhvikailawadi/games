@@ -46,3 +46,11 @@ http://localhost:3001
 - Enter a room code.
 - Click **Join Room**.
 - Click a card to play it if it matches the top card's color or value.
+
+## Deploy to Render
+1. Push this repo to GitHub.
+2. Create a free Render account at `https://render.com`.
+3. Create a new Web Service and connect your GitHub repository.
+4. Choose "Docker" for the environment.
+5. Use the default `Dockerfile` and `npm start`.
+6. After deploy, Render will give you a public site URL.
