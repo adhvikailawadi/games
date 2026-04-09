@@ -1,17 +1,48 @@
 # games
-A simple static website starter for games.
+
+A multiplayer card game website built with React, Socket.io, and Express.
 
 ## Run locally
-1. Open `index.html` in your browser.
-2. Or run a local web server from the repo root:
+1. Install dependencies:
 
 ```bash
-python3 -m http.server 8000
+npm install
 ```
 
-Then visit `http://localhost:8000`.
+2. Start both backend and frontend together:
 
-## Deploy on GitHub Pages
-1. Push this repository to GitHub.
-2. In your repository settings, enable GitHub Pages from the `main` branch and root folder.
-3. Your site will be available at `https://adhvikailawadi.github.io/games/`.
+```bash
+npm run dev:full
+```
+
+3. Open the browser at:
+
+```text
+http://localhost:5173
+```
+
+If you prefer to run each service separately:
+
+```bash
+npm run server
+npm run dev
+```
+
+4. To run the production server after building:
+
+```bash
+npm run build
+npm start
+```
+
+Then open:
+
+```text
+http://localhost:3001
+```
+
+## How to play
+- Enter a username.
+- Enter a room code.
+- Click **Join Room**.
+- Click a card to play it if it matches the top card's color or value.
